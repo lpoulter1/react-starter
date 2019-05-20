@@ -5,7 +5,7 @@ const http = require('http');
 const app = express();
 
 // Point static path to dist
-app.use(express.static(path.join(__dirname, '..', 'dist')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 const routes = require('./routes')
 app.use('/', routes);
